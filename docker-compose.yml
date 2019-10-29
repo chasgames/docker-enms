@@ -1,0 +1,7 @@
+version: '3.4'
+services:
+  enms:
+    build: .
+    image: enmsbuild:latest
+    ports:
+      - "8009:5000"
