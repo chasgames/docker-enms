@@ -1,6 +1,8 @@
 version: '3.4'
 services:
   enms:
-    build: https://github.com/chasgames/docker-enms.git
+    build:
+      context: https://github.com/chasgames/docker-enms.git
+      dockerfile: Dockerfile
     ports:
       - "8009:5000"
